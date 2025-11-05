@@ -22,8 +22,12 @@ node index.js
 
 ### 1. GET/config/:droneId
 ดึง config ของโดรน (คงค่าไว้เฉพาะ field ที่กำหนด)
-[http://localhost:3000/config/3001]
+
+  สามารถดูผลลัพธ์ได้ที่ลิงค์นี้ค่ะ
 (https://myprojectwebapp.vercel.app/log/3001)
+  ลิงค์นี้คือลิงค์ที่เมื่อเปิดหน้าเว็ปผ่าน vs code
+[http://localhost:3000/config/3001]
+
 ตัวอย่าง Response
 {
   "drone_id": 3001,
@@ -34,19 +38,23 @@ node index.js
 }
 
 ### 2. GET/status/:droneId
-ดูสถานะของ DRONE
-[http://localhost:3000/status/3001]
+  สามารถดูผลลัพธ์ได้ที่ลิงค์นี้ค่ะ
 (https://myprojectwebapp.vercel.app/status/3001)
+
+  ลิงค์นี้คือลิงค์ที่เมื่อเปิดหน้าเว็ปผ่าน vs code
+[http://localhost:3000/status/3001]
 ตัวอย่าง Response
 {
     "condition": "good"
 }
 
 ### 3. GET/log/:droneId(รองรับPagination)
-http://localhost:3000/logs/3001
-http://localhost:3000/logs/3001?page=1&perPage=5 ==> pagination
+  สามารถดูผลลัพธ์ได้ที่ 2 ลิงค์นี้ค่ะ
+(https://myprojectwebapp.vercel.app/log/3001?page=1&perPage=5) ==> pagination
 https://myprojectwebapp.vercel.app/log/3001
 
+ลิงค์นี้คือลิงค์ที่เมื่อเปิดหน้าเว็ปผ่าน vs code
+http://localhost:3000/logs/3001
 ตัวอย่าง Response
 [
   {
